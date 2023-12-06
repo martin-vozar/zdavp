@@ -1,0 +1,18 @@
+Cieľ kurzu:
+
+
+Očakávané vstupné znalosti:
+V závislosti od konkrétneho prevedenia kurzu je
+
+
+Práca s datasetom iris.csv
+Načítanie dát zo súboru, základná práca s
+datasetom a sériami. Práca s grafickou knižnicou,
+
+iris.csv
+-> kategorické, spojité veličiny
+-> plot série, serií, datasetu
+-> lineárna regresia
+-> parametrická regresia
+
+SVM, k-NN ako pokročilé

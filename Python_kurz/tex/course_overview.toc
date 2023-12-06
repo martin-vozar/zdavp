@@ -1,0 +1,6 @@
+\babel@toc {slovak}{}\relax 
+\contentsline {section}{\nameref {sec:intro}}{3}{section*.5}%
+\contentsline {section}{\numberline {1}Inštalácia a zoznámenie sa s prostredím}{3}{section.1}%
+\contentsline {section}{\numberline {2}Práca s datasetom Iris}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Načítanie dát zo súboru}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Regresia}{3}{subsection.2.2}%

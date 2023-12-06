@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\setlength{\oddsidemargin}{27mm}
+\setlength{\evensidemargin}{27mm}
+\setlength{\hoffset}{-1in}
+
+\setlength{\topmargin}{27mm}
+\setlength{\voffset}{-1in}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+
+\setlength{\textheight}{235mm}
+\setlength{\textwidth}{155mm}
+
+%\pagestyle{empty}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[slovak]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+\baselineskip 15pt
+
+\begin{center}
+\textbf{\Large Základy dátovej analýzy v Pythone}
+
+\vspace{1.5cc}
+{ \sc Martin Vozár}
+
+\end{center}
+
+\vspace{0.3 cm}
+
+
+\section*{Cieľ kurzu}
+Očakávaným výsledkom tohoto kurzu je učastníka prakticky previesť a doviesť
+k vlastnej realizácií pri základnej práci spracovania a vizualizácie dát.
+\newline \newline
+Kurz bude pozostávať zo série praktických cvičení spojených s výkladom
+teórie podľa rozsahu kurzu.
+\newline \newline
+Počas cvičenia účastník produkuje vlastný kód v jazyku Python,
+prípadne v prostredí Jupyter Notebook. Načítanie a spracovanie bude
+realizované za pomoci niektorých zaužívaných knižníc - numpy, pandas,
+scipy, matplotlib, v prípade pokročilejších metód scikit-learn,
+tensorflow.
+\newline \newline
+Medzi aplikované metódy budú v základnej variante kurzu patriť 
+lineárna a parametrická regresia. Vo variante pre pokročilejších
+účastníkov bude navyše aplikácie klasifikačného algoritmu 
+rozhodovací strom. Možnosťou pri vyššej vstupnej znalosti účastníkov je
+implemetovať neurónové siete, či iné pokročilejšie metódy.
+
+\section*{Očakávané vstupné znalosti}
+V základnej variante kurzu účastník nepotrebuje žiadne predchádzajúce
+znalosti, či skúsenosti. V tejto variante je úvodná časť kurzu obohatená
+o prechod základmi jazyka Python vrátane inštalácie prostredia
+postačujúceho (nie len) pre absolvovanie kurzu.
+\newline \newline
+Vo všeobecnosti je výhodou, vo variante pre pokročilých prerekvizitou
+znalosť základou jazyka Python, práca s knižnicami, schopnosť čítania
+dokumentácie knižníc pri samostanom adresovaní problémov.
+
+\section*{\textit{Disclaimer}}
+\textit{Tento dokument je pracovnou verziou návrhu kurzu. Jeho finalizácia
+        je predmetom ďalšej činnosti.
+}
+
+\newpage
+\tableofcontents
+
+\newpage
+\section*{Úvod}
+\label{sec:intro}
+\addcontentsline{toc}{section}{\nameref{sec:intro}}
+
+\section{Inštalácia a zoznámenie sa s prostredím}
+Cieľom tejto časti je nainštalovať u účastníkov spoľahlivo funkčné
+prostredie pre ďalšiu prácu. Súčasťou tohoto procesu je nainštalovanie
+príslušného prostredia, pričom účastníci su prevedení jednou z viacerých
+variánt tejto inštalácie. V procese tejto inštalácie môžu byť oboznámení
+s alternatívami k jednotlivým prvkom.
+
+Účastníci kurzu sú prevedený inštaláciou interpretera
+Python. Následne je predstavený package manager pip, spomenutý package
+manager Anaconda. Ďalej práca s package managerom pip na inštaláciu
+knižníc. Rýchly priebeh inštaláciou VSCode, Jupyter Lab, ako vhodných
+prostredí.
+
+Začína sa úvodným programom "Hello World!". Nasleduje import
+knižnice numpy a výpis základných typov poľa ako np.array, np.arrange,
+np.linspace. Pokračuje zavádzanie natívnej funkcie v jazyku Python
+a práca s knižnicou numpy v tejto súvislosti.
+
+Nasleduje import knižnice pandas a základná práca s ňou. Primárne
+pôjde o zoznámeni sa s obejaktami pd.DataFrame, pd.Series. Prevedenie
+prechodu z pd.Series do np.array.
+\newline \newline
+Import knižnice matplotlib, resp. matplotlib.pyplot a vizualizácia
+individuálnych sérií, vizualizácia viacerých sérií. Zoznámenie sa
+s niektorými možnosťami grafickej knižnice v zámere produkovať
+čitateľné a prehľadné grafy.
+
+\section{Práca s datasetom Iris}
+\subsection{Načítanie dát zo súboru}
+Prevedenie načítania dát zo súboru do dátových typov známych z predchádzajúceho
+celku. Následuje zobrazenie dát v dvojrozmernom priestore s kategóriou
+znázornenou farbou datapointu na grafe. Vysvetlenie rozdielu medzi spojitou
+a kategorickou veličinou. Nahrádzanie kategorickej veličiny celočíselným indexom.
+
+\subsection{Regresia}
+Import knižnice scipy, resp. funkcie scipy.optimize.curve\_fit na realizáciu
+optimalizácie.
+Na závislosti jednotlivých veličín je aplikovaná lineárna regresia. Vysvetlenie
+princípu metódy najmenších štvorcov.
+Aplikácia parametrickej regresie. Vysvetlenie princípu optimalizácie funkcie
+viacerých voľných paramtrov.
+
+\end{document}
+
+
+%  This note\footnote{Modified from ``WIC Symposium 2009 - Paper Instructions'' by
+% F. Willems and T. Tjalkens} provides instructions for the preparation and
+% submission of the final versions of the accepted papers for the
+% 38$^{\textrm{th}}$ WIC\footnote{Werkgemeenschap voor Informatie- en Communicatietheorie}
+% Symposium on Information Theory in the Benelux (SITB), and 7$^{\textrm{th}}$ joint
+% WIC/IEEE SP Symposium on Information Theory and Signal Processing in the Benelux to be
+% held in Enschede, the Netherlands, May 31--June 1, 2018   (see
+% \verb+http://www.utwente.nl/sitb2018+).
+
